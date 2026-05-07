@@ -1,0 +1,8 @@
+{
+  "cleanUrls": true,
+  "rewrites": [
+    { "source": "/", "destination": "/cummander.html" },
+    { "source": "/cummander", "destination": "/cummander.html" },
+    { "source": "/cum-the-thanks", "destination": "/cum-the-thanks.html" }
+  ]
+}
