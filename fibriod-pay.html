@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Almost There — Pay &amp; Join | The Fibroid Destroyer</title>
+<meta name="robots" content="noindex" />
+<meta name="description" content="Send your MTN Mobile Money payment to complete enrollment in The Fibroid Destroyer 7-Day WhatsApp Bootcamp." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;0,9..144,900&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+<style>
+  :root{
+    --cream:#FBF6EE;--paper:#FFFFFF;--ink:#2A211C;--ink-soft:#5A4D45;
+    --plum:#6E2438;--plum-deep:#511627;--coral:#D2674F;--coral-deep:#B84B36;
+    --gold:#C29B43;--gold-soft:#F3E7C6;--green:#2F8559;--line:#E9DECF;
+    --mtn:#FFCC00;--mtn-ink:#0a0a0a;
+    --wa:#25D366;--wa-deep:#128C7E;--shadow:0 18px 48px -24px rgba(74,30,40,.45);
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{
+    font-family:'Inter',system-ui,-apple-system,sans-serif;color:var(--ink);
+    background:
+      radial-gradient(1000px 460px at 50% -8%, rgba(210,103,79,.18), transparent 60%),
+      linear-gradient(180deg,#fff 0%, var(--cream) 100%);
+    line-height:1.6;font-size:18px;-webkit-font-smoothing:antialiased;
+    min-height:100vh;display:grid;grid-template-rows:1fr auto;padding:32px 20px 0;
+  }
+  h1,h2,h3{font-family:'Fraunces',Georgia,serif;line-height:1.12;font-weight:700}
+  .card{background:var(--paper);max-width:600px;width:100%;border-radius:26px;box-shadow:var(--shadow);padding:46px 38px;text-align:center;position:relative;overflow:hidden;border:1px solid var(--line);place-self:center}
+  .card::before{content:"";position:absolute;inset:0 0 auto 0;height:7px;background:linear-gradient(90deg,var(--coral),var(--gold))}
+  .eyebrow{display:inline-block;font-weight:700;font-size:12.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--coral-deep);background:#fcebd5;padding:7px 16px;border-radius:99px;margin-bottom:18px}
+  h1{font-size:clamp(28px,5.6vw,42px);color:var(--plum)}
+  .lead{font-size:17.5px;color:var(--ink-soft);margin:14px auto 0;max-width:460px}
+
+  .amount-row{margin:26px 0 22px;display:flex;align-items:baseline;justify-content:center;gap:10px}
+  .amount-row .lbl{font-size:14px;color:var(--ink-soft);font-weight:600;letter-spacing:.06em;text-transform:uppercase}
+  .amount-row .amt{font-family:'Fraunces';font-weight:900;font-size:clamp(40px,9vw,56px);color:var(--coral-deep);line-height:1}
+
+  .account{background:#fffdf2;border:2px dashed var(--gold);border-radius:18px;padding:22px;margin-top:6px;text-align:left}
+  .mtn{display:inline-block;background:var(--mtn);color:var(--mtn-ink);font-weight:800;font-size:12.5px;letter-spacing:.08em;padding:5px 12px;border-radius:99px;margin-bottom:14px}
+  .row{display:flex;justify-content:space-between;align-items:center;padding:10px 0;border-bottom:1px solid var(--line);gap:14px}
+  .row:last-of-type{border-bottom:none}
+  .row .k{font-size:12.5px;font-weight:700;color:var(--ink-soft);letter-spacing:.06em;text-transform:uppercase;flex:none}
+  .row .v{font-weight:700;color:var(--plum);text-align:right;word-break:break-word}
+  .row.num .v{font-family:'Fraunces';font-size:26px;font-weight:800;color:var(--ink);letter-spacing:.5px}
+  .copy{background:var(--plum);color:#fff;border:0;font-family:'Inter';font-weight:700;font-size:13.5px;letter-spacing:.04em;padding:11px 14px;border-radius:99px;cursor:pointer;margin-top:14px;width:100%;transition:background .15s}
+  .copy:hover{background:var(--plum-deep)}
+  .copy.copied{background:var(--green)}
+
+  .step{background:var(--gold-soft);border-radius:16px;padding:20px 22px;margin:28px 0 6px;text-align:left}
+  .step .lab{font-weight:800;font-size:12.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--coral-deep)}
+  .step h2{color:var(--plum);font-size:19px;margin:4px 0 4px}
+  .step p{margin:0;font-size:15px;color:var(--ink-soft)}
+
+  .wa-btn{display:flex;align-items:center;justify-content:center;gap:12px;width:100%;background:linear-gradient(180deg,var(--wa),var(--wa-deep));color:#fff;font-family:'Inter';font-weight:800;font-size:18px;text-decoration:none;padding:20px 22px;border-radius:99px;margin-top:14px;box-shadow:0 18px 36px -14px rgba(18,140,126,.7);transition:transform .15s ease, box-shadow .15s ease;line-height:1.2}
+  .wa-btn:hover{transform:translateY(-2px);box-shadow:0 24px 44px -14px rgba(18,140,126,.85)}
+  .wa-btn:active{transform:translateY(0)}
+  .wa-btn svg{width:24px;height:24px;flex:none}
+  .reassure{font-size:13.5px;color:var(--ink-soft);margin-top:12px}
+
+  .fb-foot{width:calc(100% + 40px);margin:32px -20px 0;background:#511627;color:#d8c2b1;text-align:center;font-size:12.5px;padding:34px 22px;line-height:1.7}
+  .fb-foot p{max-width:680px;margin:0 auto}
+
+  @media(max-width:520px){.card{padding:34px 22px} .row.num .v{font-size:22px}}
+</style>
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1337538778288528');
+fbq('track', 'PageView');
+fbq('track', 'InitiateCheckout', {value: 59.99, currency: 'GHS'});
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1337538778288528&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+</head>
+<body>
+  <main class="card">
+    <span class="eyebrow">Almost There</span>
+    <h1>Send Your Payment To Secure Your Spot</h1>
+    <p class="lead">Pay via <strong>MTN Mobile Money</strong> using the details below, then tap the WhatsApp button to confirm and get added to the bootcamp group.</p>
+
+    <div class="amount-row">
+      <span class="lbl">Amount</span>
+      <span class="amt">₵59.99</span>
+    </div>
+
+    <div class="account">
+      <span class="mtn">MTN Mobile Money</span>
+      <div class="row num">
+        <span class="k">MoMo Number</span>
+        <span class="v" id="momo">0557939734</span>
+      </div>
+      <div class="row">
+        <span class="k">Account Name</span>
+        <span class="v">FASULAK GLOBAL SERVICE</span>
+      </div>
+      <div class="row">
+        <span class="k">Recipient</span>
+        <span class="v">FAJIMI SULAIMON</span>
+      </div>
+      <button class="copy" id="copyBtn" type="button">Copy MoMo number</button>
+    </div>
+
+    <div class="step">
+      <div class="lab">After You Pay</div>
+      <h2>Tap below to confirm on WhatsApp</h2>
+      <p>Janet will verify your payment and add you to the private bootcamp group within minutes.</p>
+    </div>
+
+    <a class="wa-btn" href="https://wa.me/2348102770008?text=I%20have%20paid%20for%20The%20Fibroid%20Destroyer%207-Day%20WhatsApp%20Bootcamp" target="_blank" rel="noopener noreferrer">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163a11.867 11.867 0 0 1-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.82 11.82 0 0 1 8.413 3.488 11.82 11.82 0 0 1 3.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 0 1-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 0 0 1.51 5.26l-.999 3.648 3.978-1.607zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+      I HAVE PAID — Notify Janet on WhatsApp
+    </a>
+    <p class="reassure">Send your MoMo confirmation message or transaction ID with the WhatsApp message so Janet can verify quickly.</p>
+  </main>
+  <footer class="fb-foot">
+    <p><strong>This site is not a part of the Facebook website or Meta Platforms, Inc.</strong> Additionally, this site is NOT endorsed by Facebook in any way. FACEBOOK is a trademark of META PLATFORMS, INC.</p>
+  </footer>
+<script>
+(function(){
+  var btn=document.getElementById('copyBtn');
+  btn.addEventListener('click', function(){
+    var num=document.getElementById('momo').textContent.trim();
+    var done=function(){ btn.textContent='Copied!'; btn.classList.add('copied'); setTimeout(function(){ btn.textContent='Copy MoMo number'; btn.classList.remove('copied'); }, 2000); };
+    if(navigator.clipboard && navigator.clipboard.writeText){
+      navigator.clipboard.writeText(num).then(done).catch(function(){ btn.textContent='Number: '+num; });
+    } else { btn.textContent='Number: '+num; }
+  });
+})();
+</script>
+</body>
+</html>
