@@ -1,0 +1,29 @@
+{
+  "cleanUrls": true,
+  "rewrites": [
+    {
+      "source": "/",
+      "destination": "/cummander.html"
+    },
+    {
+      "source": "/cummander",
+      "destination": "/cummander.html"
+    },
+    {
+      "source": "/cum-the-thanks",
+      "destination": "/cum-the-thanks.html"
+    },
+    {
+      "source": "/fibroid-destroyer",
+      "destination": "/fibroid-destroyer.html"
+    },
+    {
+      "source": "/fibriod-thanks",
+      "destination": "/fibriod-thanks.html"
+    },
+    {
+      "source": "/fibriod-pay",
+      "destination": "/fibriod-pay.html"
+    }
+  ]
+}
