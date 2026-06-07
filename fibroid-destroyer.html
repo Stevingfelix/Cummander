@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>The Fibroid Destroyer — 7-Day WhatsApp Bootcamp</title>
+<meta name="description" content="My Mom Died From Fibroids Complications — And This Drove Me Into A Deep Research And What I Found is Eye-Opening." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;0,9..144,900;1,9..144,500&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+<style>
+  :root{
+    --cream:#FBF6EE;
+    --paper:#FFFFFF;
+    --ink:#2A211C;
+    --ink-soft:#5A4D45;
+    --plum:#6E2438;
+    --plum-deep:#511627;
+    --coral:#D2674F;
+    --coral-deep:#B84B36;
+    --gold:#C29B43;
+    --gold-soft:#F3E7C6;
+    --green:#2F8559;
+    --line:#E9DECF;
+    --shadow:0 18px 48px -24px rgba(74,30,40,.45);
+    --radius:18px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{
+    font-family:'Inter',system-ui,-apple-system,sans-serif;
+    color:var(--ink);
+    background:var(--cream);
+    line-height:1.6;
+    font-size:18px;
+    -webkit-font-smoothing:antialiased;
+    overflow-x:hidden;
+  }
+  h1,h2,h3,.display{font-family:'Fraunces',Georgia,serif;line-height:1.14;font-weight:700;letter-spacing:-.01em}
+  p{margin:0 0 1em}
+  .wrap{max-width:760px;margin:0 auto;padding:0 22px}
+  .narrow{max-width:680px}
+  section{padding:60px 0}
+  strong{font-weight:700}
+  em{font-style:italic}
+
+  /* short-line "sales letter" rhythm */
+  .verse p{margin:0 0 1.35em;font-size:19px;line-height:1.9}
+  .verse .lead{font-size:21px}
+
+  /* real photos */
+  .photo{display:block;width:100%;max-width:520px;margin:28px auto;border-radius:var(--radius);box-shadow:var(--shadow);object-fit:cover}
+  .photo.wide{max-width:620px}
+  .avatar{display:block;width:200px;height:200px;border-radius:50%;object-fit:cover;object-position:center 28%;margin:28px auto;box-shadow:var(--shadow);border:5px solid var(--paper)}
+  .tgrid{display:grid;grid-template-columns:1fr 1fr;gap:18px;max-width:620px;margin:0 auto 28px;align-items:start}
+  .tgrid img{width:100%;border-radius:14px;box-shadow:var(--shadow);display:block}
+  @media(max-width:560px){.tgrid{grid-template-columns:1fr;max-width:360px}}
+  .shots{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;max-width:840px;margin:0 auto 34px;padding:0 22px}
+  .shots img{width:100%;border-radius:14px;box-shadow:var(--shadow);display:block}
+  @media(max-width:640px){.shots{grid-template-columns:1fr;max-width:340px}}
+  .salutation{font-family:'Fraunces';font-style:italic;font-size:22px;color:var(--plum);margin-bottom:.7em}
+
+  /* ---------- Hero ---------- */
+  .hero{
+    background:
+      radial-gradient(1200px 500px at 50% -10%, rgba(210,103,79,.18), transparent 60%),
+      linear-gradient(180deg,#fff 0%, var(--cream) 100%);
+    padding:58px 0 42px;text-align:center;border-bottom:1px solid var(--line);
+  }
+  .hero h1{font-size:clamp(32px,6.6vw,56px);color:var(--plum);font-weight:900;text-transform:uppercase;letter-spacing:0}
+  .hero .sub{
+    font-family:'Fraunces';font-style:italic;font-weight:500;
+    font-size:clamp(19px,3.2vw,25px);color:var(--ink-soft);margin-top:18px;max-width:640px;margin-left:auto;margin-right:auto;
+  }
+
+  /* ---------- Image placeholders ---------- */
+  .imgph{
+    background:linear-gradient(135deg,#f1e6d6,#e7d9c4);
+    border:1px dashed #cdb89a;border-radius:var(--radius);
+    color:#9c8568;font-size:13.5px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;
+    display:flex;align-items:center;justify-content:center;text-align:center;
+    min-height:200px;padding:24px;margin:28px auto;gap:10px;
+  }
+  .imgph svg{flex:none;opacity:.7}
+  .imgph.tall{min-height:280px}
+
+  /* ---------- Section headings ---------- */
+  .h-section{font-size:clamp(26px,4.6vw,40px);text-align:center;color:var(--plum);margin-bottom:22px}
+  .subhead{font-family:'Fraunces';font-weight:700;color:var(--plum);font-size:22px;margin:10px 0 14px}
+
+  /* ---------- Bands ---------- */
+  .band{background:var(--plum);color:#FBEFE2}
+  .band .h-section{color:#fff}
+  .checklist{list-style:none;display:grid;gap:14px;margin-top:6px}
+  .checklist li{
+    display:flex;gap:14px;align-items:flex-start;background:rgba(255,255,255,.06);
+    border:1px solid rgba(255,255,255,.12);border-radius:14px;padding:16px 18px;font-size:17px;
+  }
+  .check{flex:none;width:26px;height:26px;border-radius:50%;background:var(--green);display:grid;place-items:center;margin-top:1px}
+  .check svg{width:15px;height:15px}
+
+  /* cream checklist */
+  .ulplain{list-style:none;display:grid;gap:14px;margin:6px 0}
+  .ulplain li{display:flex;gap:14px;align-items:flex-start;font-size:17.5px}
+  .ulplain .ic{flex:none;width:26px;height:26px;border-radius:50%;background:#e6f2ea;display:grid;place-items:center;margin-top:2px}
+  .ulplain .ic svg{width:14px;height:14px;color:var(--green)}
+
+  .feat{list-style:none;display:grid;gap:14px;margin:6px 0}
+  .feat li{display:flex;gap:16px;align-items:flex-start;background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:16px 20px;box-shadow:0 10px 30px -26px rgba(74,30,40,.5);font-size:17px}
+  .feat .emoji{font-size:24px;flex:none;line-height:1.3}
+
+  /* testimonials */
+  .quotes{display:grid;gap:20px;margin-top:6px}
+  .quote{background:var(--paper);border:1px solid var(--line);border-left:5px solid var(--coral);border-radius:14px;padding:22px 24px;box-shadow:var(--shadow);display:flex;gap:18px;align-items:flex-start}
+  .qav{flex:none;width:66px;height:66px;border-radius:50%;object-fit:cover;object-position:center top;border:2px solid var(--gold-soft);box-shadow:0 6px 16px -6px rgba(74,30,40,.4)}
+  .qbody{flex:1;min-width:0}
+  .quote p{font-family:'Fraunces';font-style:italic;font-size:19px;color:var(--ink);margin:0 0 12px}
+  .quote .who{font-family:'Inter';font-style:normal;font-weight:700;font-size:15px;color:var(--coral-deep)}
+
+  /* days */
+  .days{display:grid;gap:14px;margin-top:6px}
+  .day{display:flex;gap:18px;align-items:flex-start;background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:18px 20px}
+  .day .num{flex:none;width:52px;height:52px;border-radius:14px;background:var(--gold-soft);color:var(--plum);font-family:'Fraunces';font-weight:700;display:grid;place-items:center;text-align:center;line-height:1.05;font-size:13px}
+  .day .num b{font-size:22px;display:block}
+  .day h3{font-size:17px;color:var(--plum)}
+
+  /* timeline */
+  .timeline{display:grid;gap:0;margin-top:10px;border-left:3px solid var(--coral);padding-left:26px}
+  .tl{position:relative;padding:0 0 24px;font-size:17.5px}
+  .tl:last-child{padding-bottom:0}
+  .tl::before{content:"";position:absolute;left:-35px;top:4px;width:15px;height:15px;border-radius:50%;background:var(--coral);border:3px solid var(--cream)}
+  .tl b{color:var(--plum)}
+
+  /* pricing */
+  .price-band{background:linear-gradient(180deg,#fff,var(--cream));border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .pricecard{background:var(--paper);border:1px solid var(--line);border-radius:24px;box-shadow:var(--shadow);max-width:560px;margin:0 auto;padding:38px 34px;text-align:center;position:relative;overflow:hidden}
+  .pricecard::before{content:"";position:absolute;inset:0 0 auto 0;height:6px;background:linear-gradient(90deg,var(--coral),var(--gold))}
+  .was{color:var(--ink-soft);font-size:18px}
+  .was s{opacity:.7}
+  .todayslabel{font-weight:700;color:var(--plum);margin-top:14px}
+  .now{font-family:'Fraunces';font-weight:900;font-size:clamp(48px,11vw,76px);color:var(--coral-deep);line-height:1;margin:2px 0 6px}
+  .price-note{color:var(--ink-soft);font-size:15.5px}
+
+  /* bonuses */
+  .bonus-band{background:var(--plum-deep);color:#F7EADB}
+  .bonus-band .h-section{color:#fff}
+  .introducing{text-align:center;font-family:'Fraunces';font-style:italic;font-weight:500;font-size:clamp(20px,3.6vw,30px);color:#FFC79A;margin-bottom:6px}
+  .stack{display:grid;gap:18px;margin-top:6px}
+  .bonus{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.14);border-radius:16px;padding:22px 24px}
+  .bonus.main{background:rgba(194,155,67,.14);border-color:rgba(194,155,67,.5)}
+  .bonus h3{color:#fff;font-size:20px;margin-bottom:4px}
+  .bonus .val{font-family:'Inter';font-weight:700;color:#FFD8A8;font-size:15px;margin-bottom:10px}
+  .bonus p{color:#E4D2C1;font-size:16px;margin:0}
+  .plusline{text-align:center;font-family:'Fraunces';font-weight:700;color:#FFD8A8;letter-spacing:.04em;font-size:18px;margin:6px 0}
+  .totals{max-width:560px;margin:26px auto 0;background:var(--gold-soft);color:var(--plum);border-radius:16px;padding:24px 26px;text-align:center}
+  .totals .big{font-family:'Fraunces';font-weight:900;font-size:22px}
+  .totals .pay{font-weight:800;font-size:21px}
+  .totals .pay b{font-family:'Fraunces';font-weight:900;font-size:30px}
+  .totals p{margin:.2em 0}
+  .guarantee{max-width:560px;margin:24px auto 0;background:var(--paper);color:var(--ink);border:2px solid var(--green);border-radius:18px;padding:24px 26px;display:flex;gap:20px;align-items:center;box-shadow:var(--shadow)}
+  .guarantee .seal{flex:none;width:84px;height:84px;border-radius:50%;background:#e6f2ea;color:var(--green);display:grid;place-items:center}
+  .guarantee .seal svg{width:44px;height:44px}
+  .guarantee h3{color:var(--plum);font-size:20px;margin-bottom:4px}
+  .guarantee p{margin:0;font-size:15.5px;color:var(--ink-soft)}
+  @media(max-width:520px){.guarantee{flex-direction:column;text-align:center}}
+
+  /* value table */
+  .valuewrap{max-width:620px;margin:6px auto 0;background:var(--paper);border:1px solid var(--line);border-radius:18px;overflow:hidden;box-shadow:var(--shadow)}
+  table.value{width:100%;border-collapse:collapse;font-size:16px}
+  table.value caption{background:var(--plum);color:#fff;font-family:'Fraunces';font-weight:600;font-size:18px;padding:16px}
+  table.value th,table.value td{padding:14px 18px;text-align:left;border-bottom:1px solid var(--line)}
+  table.value th{font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-soft);background:#faf4ea}
+  table.value td.r{text-align:right;white-space:nowrap}
+  table.value .reg{color:var(--ink-soft)}
+  table.value .yes{color:var(--green);font-weight:800}
+  table.value tr.total td{font-weight:800;background:var(--gold-soft);color:var(--plum);font-size:17px}
+  table.value tr.total .price{color:var(--coral-deep)}
+  table.value tr.save td{font-weight:800;background:var(--green);color:#fff;text-align:center;border-bottom:none}
+
+  /* CTA */
+  .cta-wrap{text-align:center;margin-top:30px}
+  .btn{display:inline-block;background:linear-gradient(180deg,var(--coral),var(--coral-deep));color:#fff;font-family:'Inter';font-weight:800;font-size:17px;padding:18px 30px;border-radius:99px;text-decoration:none;border:none;cursor:pointer;box-shadow:0 16px 32px -14px rgba(184,75,54,.7);transition:transform .15s ease, box-shadow .15s ease;line-height:1.3}
+  .btn:hover{transform:translateY(-2px);box-shadow:0 22px 40px -14px rgba(184,75,54,.8)}
+  .btn:active{transform:translateY(0)}
+  .btn-gold{background:linear-gradient(180deg,#D8B458,var(--gold));color:#3a2a08;box-shadow:0 16px 32px -14px rgba(194,155,67,.7)}
+
+  /* countdown */
+  .countdown{display:flex;gap:12px;justify-content:center;margin:6px 0 10px}
+  .cd{background:#fff;border:1px solid var(--line);border-radius:12px;min-width:74px;padding:12px 8px;text-align:center;box-shadow:0 8px 22px -18px rgba(74,30,40,.6)}
+  .cd b{display:block;font-family:'Fraunces';font-weight:700;font-size:30px;color:var(--plum);line-height:1}
+  .cd span{font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-soft)}
+
+  /* order form */
+  .order-band{background:linear-gradient(180deg,var(--plum),var(--plum-deep));color:#F7EADB}
+  .order-band .h-section{color:#fff}
+  .formcard{background:var(--paper);color:var(--ink);max-width:540px;margin:6px auto 0;border-radius:22px;padding:32px 30px;box-shadow:var(--shadow)}
+  .deliver{list-style:none;display:grid;gap:12px;margin-bottom:8px}
+  .deliver li{display:flex;gap:12px;align-items:flex-start;font-size:16px}
+  .deliver .ic{flex:none;width:24px;height:24px;border-radius:50%;background:#e6f2ea;display:grid;place-items:center}
+  .deliver .ic svg{width:13px;height:13px;color:var(--green)}
+  .expires{text-align:center;font-weight:700;color:var(--coral-deep);margin:14px 0 22px;padding-top:18px;border-top:1px solid var(--line)}
+  .field{margin-bottom:16px;text-align:left}
+  .field label{display:block;font-weight:700;font-size:14px;color:var(--plum);margin-bottom:6px}
+  .field input{width:100%;padding:14px 16px;border:1.5px solid var(--line);border-radius:12px;font-size:16px;font-family:inherit;background:#fdfbf7;transition:border-color .15s ease, box-shadow .15s ease}
+  .field input:focus{outline:none;border-color:var(--coral);box-shadow:0 0 0 4px rgba(210,103,79,.15)}
+  .formcard .btn{width:100%}
+  .formnote{font-size:14px;color:var(--ink-soft);margin-top:16px}
+  .success{display:none;text-align:center;padding:14px 0}
+  .success.show{display:block}
+  .success .tick{width:64px;height:64px;border-radius:50%;background:#e6f2ea;display:grid;place-items:center;margin:0 auto 16px}
+  .success .tick svg{width:32px;height:32px;color:var(--green)}
+  .success h3{color:var(--plum);font-size:24px;margin-bottom:8px}
+
+  /* ps */
+  .ps-band{background:var(--cream)}
+  .ps{background:var(--paper);border:1px solid var(--line);border-left:5px solid var(--gold);border-radius:14px;padding:20px 24px;margin-bottom:16px}
+  .ps b{color:var(--plum);font-family:'Fraunces'}
+  .ps p{margin:0}
+  .scarcity{text-align:center;font-family:'Fraunces';font-size:21px;color:var(--plum);margin-bottom:14px}
+  .progress{max-width:440px;margin:0 auto 26px}
+  .progress .bar{height:16px;background:#eaddca;border-radius:99px;overflow:hidden}
+  .progress .fill{height:100%;width:85%;background:linear-gradient(90deg,var(--coral),var(--coral-deep))}
+  .progress .lbl{text-align:center;font-size:14px;font-weight:700;color:var(--coral-deep);margin-top:8px}
+  .closing{text-align:center;font-family:'Fraunces';font-weight:700;font-size:20px;color:var(--plum);margin-top:30px}
+  .hr{height:1px;background:var(--line);max-width:120px;margin:30px auto;border:0}
+  @media(max-width:680px){section{padding:50px 0}.pricecard,.formcard{padding:28px 22px}}
+</style>
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1337538778288528');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1337538778288528&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+</head>
+<body>
+
+<!-- HERO -->
+<header class="hero">
+  <div class="wrap">
+    <h1>My Mom Died From Fibroids Complications</h1>
+    <p class="sub">And This Drove Me Into A Deep Research And What I Found is Eye-Opening.</p>
+    <img class="photo" src="1775603207143-granite-coping-edging-around-cemetery-headstone.webp" alt="Granite cemetery headstone" />
+  </div>
+</header>
+
+<!-- LETTER -->
+<section class="verse">
+  <div class="wrap narrow">
+    <p class="salutation">Dear friend,</p>
+    <p class="lead">Ever felt a stabbing pain in your belly?</p>
+    <p class="lead">A pain so excruciating, you were scared it could end your life?</p>
+    <p>I know that fear.</p>
+    <p>Fibroids killed my mum.</p>
+    <p>And they almost killed me too.</p>
+    <p>Stay with me for the next three minutes,</p>
+    <p>And I'll share with you why surgeries fail and pills worsen the problem.</p>
+    <p>Plus, I'll also be telling you about a special solution.</p>
+    <p>A solution that worked for me.</p>
+  </div>
+</section>
+
+<!-- NO, THIS ISN'T THE USUAL STUFF -->
+<section class="band">
+  <div class="wrap narrow">
+    <h2 class="h-section">No, This Isn't The Usual Stuff</h2>
+    <img class="photo" src="Screenshot%202026-05-22%20at%204.54.00%20PM.png" alt="One orange balloon rising above grey balloons — This One Is Different" style="max-width:480px" />
+    <ul class="checklist">
+      <li><span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg></span>No Bathing With Urine (Yes, Some Women Still Try This!).</li>
+      <li><span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg></span>This Does Not Involve Life Threatening Operations And Surgeries.</li>
+      <li><span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg></span>This Doesn't Involve Buying Expensive Hormonal Pills.</li>
+      <li><span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg></span>This Doesn't Involve Gruesome Fasting (That Leave You Looking Malnourished).</li>
+      <li><span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg></span>No Bitter Concoctions That Damage Your Liver.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- HERE'S WHY YOU SHOULD LISTEN TO ME -->
+<section class="verse">
+  <div class="wrap narrow">
+    <p>Want to hear about the solution I found?</p>
+    <p>We'll get to that part in a bit.</p>
+    <p>First, who am I?</p>
+    <p>And why should you listen to me?</p>
+    <p>Good questions.</p>
+    <h2 class="h-section" style="margin-top:34px">Here's Why You Should Listen To Me</h2>
+    <img class="avatar" src="Woman_in_pink_shirt_selfie_202605221611.jpeg" alt="Janet Mubanga" />
+    <p>Yeah, that's me with my white teeth.</p>
+    <p>My name is Janet Mubanga,</p>
+    <p>I am not a doctor.</p>
+    <p>However, I found something.</p>
+    <p>A unique solution for fibroids.</p>
+    <p>It worked for me.</p>
+    <p class="subhead">And Here's How I Discovered It.</p>
+    <p>It all began after my mum died.</p>
+    <p>She went in for a fibroid operation.</p>
+    <p>But she never came out alive.</p>
+  </div>
+</section>
+
+<!-- MY LIFE WAS AT RISK -->
+<section class="ps-band verse" style="padding-bottom:0">
+  <div class="wrap narrow">
+    <h2 class="h-section">My Life Was At Risk</h2>
+    <img class="photo" src="download.jpg" alt="Operating room" />
+    <p>A year after my mum passed?</p>
+    <p>The nightmare of fibroids strolled into my life.</p>
+    <p>Unannounced.</p>
+    <p>First, I bled.</p>
+    <p>Too much and too often.</p>
+    <p>Then my belly started swelling.</p>
+    <p>Round and tight like I was 7 months pregnant.</p>
+    <p>And the pain?</p>
+    <p>It was sharp.</p>
+    <p>Impossible to ignore.</p>
+    <p>Doctors?</p>
+    <p>They handed me pills.</p>
+    <p>But nothing changed except my mood.</p>
+    <p>Angry one minute, crying the next.</p>
+    <p>Then the doctor said, "You'll need surgery."</p>
+    <p>"Surgery"? I shouted.</p>
+    <p>Horrified.</p>
+    <p>As I walked out of the hospital,</p>
+    <p>a voice in my head whispered,</p>
+    <p>"This will kill you too."</p>
+    <p>Just like it killed your mother.</p>
+    <p>I felt goosebumps all over.</p>
+    <p>"No way," I thought.</p>
+    <p>I couldn't let that happen to me.</p>
+  </div>
+</section>
+
+<!-- I FOUND MY SOLUTION IN INDIA -->
+<section class="verse" style="padding-top:0">
+  <div class="wrap narrow">
+    <p>So I started searching.</p>
+    <p>Desperately.</p>
+    <p>For a way out.</p>
+    <p>So, I jumped on a plane.</p>
+    <img class="photo wide" src="aeroplane-airbus-042735541-16x9_0.jpg" alt="Aeroplane in flight" />
+    <h2 class="h-section" style="margin-top:30px">I Found My Solution In India</h2>
+    <p>I went to the Ayurveda Holistic Health Institute in India.</p>
+    <p>That was where I met Professor Priya Sharma.</p>
+    <p>When I applied the things she showed me?</p>
+    <p>I began seeing changes within a week.</p>
+    <p>It felt like a dream.</p>
+    <p>Within a month, my bloated belly had gone back to normal.</p>
+    <p>By the time I went for a test two months later, my fibroids had shrunk.</p>
+    <img class="photo" src="fibroid%20stomach.jpg" alt="Before and after belly comparison" />
+    <p>It disappeared.</p>
+    <p>Today, I'm a proud mom of 2 boys and a girl.</p>
+    <img class="photo" src="IMG_1130%202.JPG" alt="Janet with her two boys and girl" style="filter:grayscale(100%)" />
+    <p>But, enough about me.</p>
+    <p>Let's get back to why you are here.</p>
+    <p>It's time I revealed the solution that practically saved my life.</p>
+  </div>
+</section>
+
+<!-- INTRODUCING -->
+<section class="band">
+  <div class="wrap narrow">
+    <p class="introducing">Introducing...</p>
+    <h2 class="h-section">The Fibroid Destroyer: A 7-Day WhatsApp Bootcamp</h2>
+    <p style="text-align:center;color:#F0D8C2;max-width:600px;margin:0 auto 22px">The exact step-by-step system Professor Priya Sharma taught me in India—now adapted for Ghanaian women.</p>
+    <p>This isn't just another "tips and tricks" PDF.</p>
+    <p>It's a daily WhatsApp training where I personally walk you through the holistic protocol that shrunk my fibroids in 60 days.</p>
+    <p>No surgery. No hormonal pills. No bitter concoctions.</p>
+    <p>Just ancient Ayurvedic wisdom combined with practical action steps you can do from your home in Accra, Kumasi, Tamale, or anywhere in Ghana.</p>
+  </div>
+</section>
+
+<!-- HEAR FROM WOMEN -->
+<section>
+  <div class="wrap narrow">
+    <h2 class="h-section">Hear From Women Who Beat Fibroids With This Protocol</h2>
+    <img class="photo" src="testimonials/testimonial%202.png" alt="Testimonial from Happy Hannah — positive pregnancy test after Coach Janet's WhatsApp training" style="max-width:360px" />
+    <div class="quotes">
+      <div class="quote"><img class="qav" src="faces/av1.jpg" alt="Mary, Accra" /><div class="qbody"><p>🔥 "I felt relief within days. By the second week, my pain was gone!"</p><span class="who">– Mary, Accra</span></div></div>
+      <div class="quote"><img class="qav" src="faces/av2.jpg" alt="Tasha, Kumasi" /><div class="qbody"><p>🔥 "My bloating disappeared in 3 weeks, and my doctor confirmed my fibroids had shrunk!"</p><span class="who">– Tasha, Kumasi</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW THE TRAINING WORKS -->
+<section class="ps-band">
+  <div class="wrap narrow">
+    <div class="tgrid">
+      <img src="testimonials/testimonial%201.png" alt="Testimonial from Mary Blessed — conceived after Coach Janet's WhatsApp training" />
+      <img src="testimonials/testimonial%203.png" alt="Testimonial from Tasha Osei-Kyei — tested pregnant after Coach Janet's WhatsApp training" />
+    </div>
+    <h2 class="h-section">Here's How the 7-Day Training Works</h2>
+    <p style="text-align:center">Every day for 7 days, you'll receive:</p>
+    <ul class="feat">
+      <li><span class="emoji">📱</span><div>Daily WhatsApp lessons (text + voice notes) sent directly to your phone</div></li>
+      <li><span class="emoji">📋</span><div>Simple action steps you can implement immediately</div></li>
+      <li><span class="emoji">🌿</span><div>Natural ingredient lists (all available at Makola Market, Kejetia, or your local market)</div></li>
+      <li><span class="emoji">💊</span><div>Hormone-balancing protocols that target the root cause of fibroids</div></li>
+      <li><span class="emoji">🍲</span><div>Meal guides with Ghanaian foods that shrink fibroids naturally</div></li>
+      <li><span class="emoji">📊</span><div>Progress tracking sheets to monitor your changes</div></li>
+    </ul>
+  </div>
+</section>
+
+<!-- WHAT YOU'LL LEARN EACH DAY -->
+<section>
+  <div class="wrap narrow">
+    <h2 class="h-section">What You'll Learn Each Day:</h2>
+    <div class="days">
+      <div class="day"><div class="num">DAY<b>1</b></div><div><h3>Understanding Your Fibroids – What They Are &amp; Why Surgery Isn't Always The Answer</h3></div></div>
+      <div class="day"><div class="num">DAY<b>2</b></div><div><h3>The Hormone Connection – How to Naturally Balance Estrogen Levels</h3></div></div>
+      <div class="day"><div class="num">DAY<b>3</b></div><div><h3>The Anti-Fibroid Kitchen – Ghanaian Foods That Heal Your Uterus</h3></div></div>
+      <div class="day"><div class="num">DAY<b>4</b></div><div><h3>The Herbal Protocol – Natural Ingredients That Shrink Fibroids (All Available in Ghana)</h3></div></div>
+      <div class="day"><div class="num">DAY<b>5</b></div><div><h3>The Detox System – Flushing Out Toxins That Feed Your Fibroids</h3></div></div>
+      <div class="day"><div class="num">DAY<b>6</b></div><div><h3>Pain Management – Natural Remedies for Cramps, Bleeding &amp; Bloating</h3></div></div>
+      <div class="day"><div class="num">DAY<b>7</b></div><div><h3>The Maintenance Plan – How to Keep Fibroids From Coming Back</h3></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- WHAT MAKES THIS DIFFERENT -->
+<section class="ps-band">
+  <div class="wrap narrow">
+    <h2 class="h-section">What Makes This Different?</h2>
+    <ul class="ulplain">
+      <li><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg></span><span><strong>WhatsApp-based</strong> – No apps to download, no complicated portals. Just your phone.</span></li>
+      <li><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg></span><span><strong>Culturally adapted</strong> – Uses Ghanaian foods and ingredients available at your local market.</span></li>
+      <li><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg></span><span><strong>Daily support</strong> – I'm personally guiding you through each step.</span></li>
+      <li><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg></span><span><strong>Proven results</strong> – The same protocol that worked for me and hundreds of African women.</span></li>
+      <li><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg></span><span><strong>Affordable</strong> – Costs less than one month of hormonal pills.</span></li>
+    </ul>
+  </div>
+</section>
+
+<!-- TIMELINE -->
+<section>
+  <div class="wrap narrow">
+    <h2 class="h-section">The Timeline You Can Expect:</h2>
+    <p>Within the first 2 weeks of using this protocol:</p>
+    <div class="timeline">
+      <div class="tl">Pain and pressure should be gone (many see results in days).</div>
+      <div class="tl"><b>3 weeks:</b> Belly bloating down by 75%, and menstrual flow normal.</div>
+      <div class="tl"><b>4-8 weeks:</b> Bloating and fibroids significantly reduced or completely gone.</div>
+    </div>
+  </div>
+</section>
+
+<!-- INVESTMENT -->
+<section class="price-band">
+  <div class="wrap">
+    <h2 class="h-section">Investment</h2>
+    <div class="pricecard">
+      <div class="was">Normal Price: <s>₵500</s></div>
+      <div class="todayslabel">Today's Price:</div>
+      <div class="now">₵59.99</div>
+      <p class="price-note">(Less than what you'd spend on one month of ineffective pills)</p>
+      <div class="cta-wrap" style="margin-top:22px">
+        <a class="btn" href="/fibriod-pay">YES, I WANT TO JOIN THE FIBROID DESTROYER BOOTCAMP!</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHAT YOU GET WHEN YOU ENROLL -->
+<section class="bonus-band">
+  <div class="shots">
+    <img src="testimonials/WhatsApp%20Image%202026-05-19%20at%2007.38.29%20%283%29.jpeg" alt="Facebook comment testimonial — fibroids becoming smaller after a week" />
+    <img src="testimonials/WhatsApp%20Image%202026-05-19%20at%2007.38.29%20%284%29.jpeg" alt="WhatsApp testimonial — fibroids shrank from 10x9cm to 6x8cm" />
+    <img src="testimonials/WhatsApp%20Image%202026-05-19%20at%2007.38.31%20%283%29.jpeg" alt="Facebook comment testimonial — feeling better with no pain" />
+  </div>
+  <div class="wrap narrow">
+    <h2 class="h-section">What You Get When You Enroll Today:</h2>
+    <div class="stack">
+      <div class="bonus main">
+        <h3>The Fibroid Destroyer: 7-Day WhatsApp Bootcamp</h3>
+        <div class="val">Value: ₵500</div>
+        <p>Daily WhatsApp training with step-by-step guidance</p>
+      </div>
+    </div>
+    <p class="plusline">PLUS 4 POWERFUL BONUSES:</p>
+    <div class="stack">
+      <div class="bonus">
+        <h3>BONUS #1: The Fertility Unblocking System</h3>
+        <div class="val">Value: ₵80</div>
+        <p>Complete recipe guide and meal plan for clearing blocked fallopian tubes naturally. This system contains proven ancient remedies — herbs, foods, and targeted nutritional protocols — that break down scar tissue and inflammation blocking your tubes. If you've been trying to conceive without success, this protocol addresses the root cause many doctors miss: undetected tubal blockages that silently prevent pregnancy. Women who've used this system report improved cycle regularity and successful conception after years of trying.</p>
+      </div>
+      <div class="bonus">
+        <h3>BONUS #2: The Menopause Mastery Guide</h3>
+        <div class="val">Value: ₵70</div>
+        <p>Natural strategies to cool hot flashes, stabilize mood swings, and navigate "the change" without hormone replacement therapy. This guide reveals time-tested herbal compounds and dietary shifts that regulate your body's natural estrogen decline — so you sleep better, feel emotionally balanced, and move through menopause with confidence instead of dread. Perfect for women entering or already in menopause who want to avoid the long-term risks of synthetic hormones.</p>
+      </div>
+      <div class="bonus">
+        <h3>BONUS #3: The Cyst &amp; Hormone Reset Protocol</h3>
+        <div class="val">Value: ₵75</div>
+        <p>Specialized recipes and dietary plans that dissolve ovarian cysts and rebalance your hormones from the inside out. This protocol targets the estrogen dominance that fuels cyst growth — using anti-inflammatory foods and ancient herbal compounds that shrink cysts without surgery. Works for PCOS, ovarian cysts, and hormonal acne. Many women notice their painful periods ease and their skin clear up within the first few weeks of following this reset.</p>
+      </div>
+      <div class="bonus">
+        <h3>BONUS #4: The Strong Seed Protocol (For Your Partner)</h3>
+        <div class="val">Value: ₵65</div>
+        <p>Yes, we're including the men! This guide contains proven ancient recipes and nutritional protocols specifically formulated to cure low sperm count and poor sperm viscosity — two of the most common and overlooked causes of male infertility. Using powerful seeds, roots, and foods backed by centuries of traditional medicine, it helps your partner produce stronger, more abundant sperm naturally. Men who have followed this protocol report dramatically improved sperm counts in as little as 8 weeks. Share this with your husband or partner and watch your chances of conception multiply.</p>
+      </div>
+    </div>
+
+    <div class="totals">
+      <p class="big">TOTAL VALUE: ₵790</p>
+      <p class="pay">…but you pay only <b>₵59.99</b> and get access to everything, including lifetime support.</p>
+      <p style="margin-top:.6em">That's the complete reproductive wellness system for less than half price.</p>
+    </div>
+
+    <div class="guarantee">
+      <div class="seal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2 4 5v6c0 5 3.4 8.6 8 11 4.6-2.4 8-6 8-11V5l-8-3Z"/><path d="m9 12 2 2 4-4"/></svg></div>
+      <div>
+        <h3>30-Day Money-Back Guarantee</h3>
+        <p>Your enrollment is completely risk-free. Follow the protocol, and if you're not happy for any reason, just message me within 30 days for a full refund — no questions asked.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY THE BONUSES -->
+<section>
+  <div class="wrap narrow">
+    <h2 class="h-section">Why Am I Giving You All These Bonuses?</h2>
+    <p>Because I know fibroids don't exist in isolation.</p>
+    <p>When I was struggling with fibroids, I also had:</p>
+    <ul class="ulplain">
+      <li><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg></span>Irregular periods (hormonal imbalance)</li>
+      <li><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg></span>Fears about future fertility (tube blockage concerns)</li>
+      <li><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg></span>A husband worried about our chances of conceiving (his sperm health)</li>
+    </ul>
+    <p>These issues are connected.</p>
+    <p>They all stem from the same root: hormonal disruption and poor reproductive health.</p>
+    <p>So when you fix fibroids naturally, you need to address the whole system.</p>
+    <p>That's why I'm including these bonuses.</p>
+    <p>This isn't just about shrinking fibroids.</p>
+    <p>It's about reclaiming your complete reproductive wellness.</p>
+    <div class="cta-wrap">
+      <a class="btn btn-gold" href="/fibriod-pay">YES, I WANT THE COMPLETE REPRODUCTIVE WELLNESS SYSTEM! (₵59.99)</a>
+    </div>
+    <div class="tgrid" style="margin-top:34px">
+      <img src="testimonials/WhatsApp%20Image%202026-05-19%20at%2007.38.31.jpeg" alt="WhatsApp testimonial — hospital confirmed no fibroids again" />
+      <img src="testimonials/WhatsApp%20Image%202026-05-19%20at%2007.38.32.jpeg" alt="WhatsApp testimonial — only one 1cm fibroid remaining after the herbs" />
+    </div>
+    <div class="quotes">
+      <div class="quote"><img class="qav" src="faces/av3.jpg" alt="Akosua, Kumasi" /><div class="qbody"><p>"I joined for the fibroid training, but the tube blockage bonus changed my life. After 3 years of trying, I'm now 5 months pregnant!"</p><span class="who">– Akosua, Kumasi</span></div></div>
+      <div class="quote"><img class="qav" src="faces/av4.jpg" alt="Gifty, Accra" /><div class="qbody"><p>"My husband used the Strong Seed Protocol and his sperm count doubled in 8 weeks. We finally have hope."</p><span class="who">– Gifty, Accra</span></div></div>
+    </div>
+    <div class="ps" style="margin-top:30px"><p><b>P.P.P.S.</b> – The bonuses alone are worth ₵290. You're getting the main training + 4 complete ebooks for just ₵59.99. This bundle offer ends when we hit 20 enrollments.</p></div>
+  </div>
+</section>
+
+<!-- VALUE TABLE -->
+<section class="ps-band">
+  <div class="wrap narrow">
+    <div class="valuewrap">
+      <table class="value">
+        <caption>🎁 What's Included in Your Enrollment:</caption>
+        <thead><tr><th>What You Get</th><th class="r">Regular Price</th><th class="r">Your Price</th></tr></thead>
+        <tbody>
+          <tr><td>7-Day Fibroid Relief Training</td><td class="r reg">₵500</td><td class="r yes">✅</td></tr>
+          <tr><td>Bonus #1: Fertility Unblocking System</td><td class="r reg">₵80</td><td class="r yes">✅</td></tr>
+          <tr><td>Bonus #2: Menopause Mastery Guide</td><td class="r reg">₵70</td><td class="r yes">✅</td></tr>
+          <tr><td>Bonus #3: Cyst &amp; Hormone Reset Protocol</td><td class="r reg">₵75</td><td class="r yes">✅</td></tr>
+          <tr><td>Bonus #4: Strong Seed Protocol (Men)</td><td class="r reg">₵65</td><td class="r yes">✅</td></tr>
+          <tr class="total"><td>TOTAL VALUE</td><td class="r">₵790</td><td class="r price">₵59.99</td></tr>
+          <tr class="save"><td colspan="3">YOU SAVE ₵440 TODAY</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- HOW TO ENROLL -->
+<section class="order-band" id="order">
+  <div class="wrap narrow">
+    <h2 class="h-section">HOW TO ENROLL</h2>
+    <div class="formcard">
+      <p style="font-weight:600">When you enroll today, I'll send you:</p>
+      <ul class="deliver">
+        <li><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg></span>Immediate access to the WhatsApp training group</li>
+        <li><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg></span>Welcome pack with pre-training preparation guide</li>
+        <li><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg></span>Bonus: Fibroid-Fighting Recipe eBook (worth ₵50)</li>
+      </ul>
+      <p class="expires">This offer expires in 48 hours.</p>
+      <div class="countdown" aria-label="Offer countdown">
+        <div class="cd"><b id="cd-h">47</b><span>Hours</span></div>
+        <div class="cd"><b id="cd-m">59</b><span>Minutes</span></div>
+        <div class="cd"><b id="cd-s">59</b><span>Seconds</span></div>
+      </div>
+
+      <a class="btn" href="/fibriod-pay" style="width:100%;text-align:center">YES, I WANT TO JOIN THE FIBROID DESTROYER BOOTCAMP!</a>
+      <p class="formnote">Note: Training starts every Monday. Secure your spot before this week fills up (limited to 20 women per cohort for personalized attention).</p>
+    </div>
+  </div>
+</section>
+
+<!-- HEAR FROM MORE WOMEN -->
+<section>
+  <div class="wrap narrow">
+    <h2 class="h-section">Hear From More Women Who Have Completed This Training</h2>
+    <div class="quotes">
+      <div class="quote"><img class="qav" src="faces/av5.jpg" alt="Ama, Tema" /><div class="qbody"><p>"This training changed my life. Janet explained everything so clearly on WhatsApp. I could re-read the messages anytime I forgot something."</p><span class="who">– Ama, Tema</span></div></div>
+      <div class="quote"><img class="qav" src="faces/av6.jpg" alt="Abena, Cape Coast" /><div class="qbody"><p>"I was skeptical about WhatsApp training, but Janet made it so easy. The daily voice notes felt like having a friend guide me."</p><span class="who">– Abena, Cape Coast</span></div></div>
+      <div class="quote"><img class="qav" src="faces/av7.jpg" alt="Efua, Takoradi" /><div class="qbody"><p>"The best ₵59.99 I ever spent. My doctor was shocked at my results after just 6 weeks."</p><span class="who">– Efua, Takoradi</span></div></div>
+    </div>
+    <div class="cta-wrap">
+      <a class="btn" href="/fibriod-pay">YES, I WANT TO JOIN THE FIBROID DESTROYER BOOTCAMP!</a>
+    </div>
+  </div>
+</section>
+
+<!-- SCARCITY + PS -->
+<section class="ps-band">
+  <div class="wrap narrow">
+    <p class="scarcity">Our current cohort is 85% full. Enroll now to secure your spot before spaces run out.</p>
+    <div class="progress">
+      <div class="bar"><div class="fill"></div></div>
+      <div class="lbl">85% full</div>
+    </div>
+    <hr class="hr" />
+    <div class="ps"><p><b>P.S.</b> – Remember, this is the same protocol I learned at the Ayurveda Holistic Health Institute in India. The same protocol that saved me from surgery. Now adapted specifically for Ghanaian women like you.</p></div>
+    <div class="ps"><p><b>P.P.S.</b> – You're just 7 days away from understanding exactly how to shrink your fibroids naturally. No pills. No surgery. No fear.</p></div>
+    <p class="closing">Limited spots available. Training starts Monday.</p>
+  </div>
+</section>
+
+<footer style="background:#511627;color:#d8c2b1;text-align:center;font-size:12.5px;padding:34px 22px;line-height:1.7">
+  <p style="max-width:680px;margin:0 auto"><strong>This site is not a part of the Facebook website or Meta Platforms, Inc.</strong> Additionally, this site is NOT endorsed by Facebook in any way. FACEBOOK is a trademark of META PLATFORMS, INC.</p>
+</footer>
+
+<script>
+  // Countdown (persists 48h per visitor)
+  (function(){
+    var KEY='fd_deadline', DUR=48*60*60*1000;
+    var end=parseInt(localStorage.getItem(KEY),10);
+    if(!end || isNaN(end) || end < Date.now()){ end=Date.now()+DUR; localStorage.setItem(KEY,end); }
+    var h=document.getElementById('cd-h'), m=document.getElementById('cd-m'), s=document.getElementById('cd-s');
+    function pad(n){return n<10?'0'+n:''+n;}
+    function tick(){
+      var diff=end-Date.now(); if(diff<0)diff=0;
+      h.textContent=pad(Math.floor(diff/3600000));
+      m.textContent=pad(Math.floor(diff%3600000/60000));
+      s.textContent=pad(Math.floor(diff%60000/1000));
+    }
+    tick(); setInterval(tick,1000);
+  })();
+</script>
+</body>
+</html>
