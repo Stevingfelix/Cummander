@@ -94,29 +94,18 @@
     .hero-deco{position:absolute;color:var(--pine);opacity:.07;width:260px;height:210px;top:-30px;right:-40px;pointer-events:none}
     .hero-deco svg{width:100%;height:100%}
     .hero-grid{display:grid;grid-template-columns:1.02fr .98fr;gap:60px;align-items:center;position:relative}
-    .hero h1{font-size:clamp(30px,4.4vw,54px);margin:18px 0 8px;line-height:1.12}
-    .hero .script{font-size:clamp(22px,3vw,31px)}
-    .hero-wink{font-family:'Caveat',cursive;font-weight:700;font-size:clamp(20px,2.4vw,26px);color:var(--ink-soft);margin:14px 0 22px}
-    .hero-desc{font-size:17px;color:var(--ink-soft);max-width:540px;margin:0 0 30px}
+    .hero h1{font-size:clamp(40px,5.8vw,72px);margin:18px 0 8px;line-height:1.06}
+    .hero .script{font-size:clamp(22px,3vw,31px);display:block;margin:10px 0 0}
+    .hero .script s{color:var(--ink-soft);opacity:.55;text-decoration-thickness:2.5px}
+    .hero-desc{font-size:17px;color:var(--ink-soft);max-width:540px;margin:22px 0 28px}
     .hero-desc b{color:var(--ink);font-weight:800}
     .hero-actions{display:flex;gap:14px;flex-wrap:wrap;align-items:center}
     .avail{display:inline-flex;align-items:center;gap:8px;font-weight:800;font-size:13px;margin-top:18px}
     .avail .dot{width:9px;height:9px;border-radius:50%;background:#3fae6a;border:1.5px solid var(--ink);animation:pulse 1.8s infinite}
     @keyframes pulse{0%,100%{box-shadow:0 0 0 0 rgba(63,174,106,.5)}50%{box-shadow:0 0 0 6px rgba(63,174,106,0)}}
 
-    /* hero motif v2: selfie + Lucifer's bubble + Hot Disclaimer */
-    .hero-visual{position:relative;padding:14px 6px;display:flex;flex-direction:column;align-items:center;gap:18px}
-    .selfie-frame{position:relative;max-width:420px;width:100%;transform:rotate(-2deg)}
-    .selfie-frame img{display:block;width:100%;height:auto;background:var(--cream-2);border:2px solid var(--ink);border-radius:var(--radius);box-shadow:var(--shadow)}
-    .selfie-tape{position:absolute;top:-12px;left:50%;transform:translateX(-50%) rotate(-1deg);width:90px;height:22px;background:rgba(245,236,218,.72);border:1px dashed rgba(42,36,24,.35);z-index:6}
-    .hero-warning{text-align:center;font-size:13.5px;font-style:italic;font-weight:700;color:var(--ink-soft);max-width:420px;margin:0;line-height:1.5}
-    .hero-warning strong{color:var(--gold-deep);font-weight:900;letter-spacing:.06em;text-transform:uppercase;font-style:normal;margin-right:2px}
-    @media(max-width:560px){
-      .selfie-frame{max-width:320px;transform:rotate(-1deg)}
-    }
-
-    /* hero motif (legacy — operator's brief, kept for reference) */
-    .hero-visual-legacy{position:relative;padding:26px 14px}
+    /* hero motif: operator's brief — already-handled day with chaos notes */
+    .hero-visual{position:relative;padding:26px 14px}
     .brief{padding:22px;background:var(--paper);position:relative;z-index:2}
     .brief-top{display:flex;align-items:center;gap:9px;font-family:'Bricolage Grotesque';font-weight:800;font-size:15.5px;margin-bottom:10px}
     .brief-top .nm{width:28px;height:22px;color:var(--pine);flex-shrink:0}
@@ -302,10 +291,10 @@
       <div class="hero-grid">
         <div>
           <span class="pill"><span class="doodle">📣</span> Calling on busy founders, agency owners &amp; coaches…</span>
-          <h1 class="display">Hi. My name's "the VA who handles your business like he owns it," and I've been called "Steving Felix."</h1>
-          <p class="hero-wink">Actually wait, I think I got that backwards 🤔</p>
+          <h1 class="display">Stop struggling to handle all your workload <span class="underline-wave">alone.</span></h1>
+          <span class="script">Let me take the workload and pressure off your back. As your <s>VA</s> Second Brain.</span>
           <p class="hero-desc">
-            But yeah, I'm that <b>multi-talented VA you don't have to manage</b> … who'll <b>edit your videos</b> … <b>write your campaigns</b> … <b>build your funnels</b> … <b>run your ads</b> … <b>clean up your CRM</b> … <b>use AI like a small agency stuffed into one person</b> … and still <b>treat your business like it's mine too</b>. See for yourself…
+            <b>Multi-talented. AI-fluent.</b> I run the work, make the calls, and only loop you in when it actually matters.
           </p>
           <div class="hero-actions">
             <a href="#apply" class="btn btn-gold">Apply to Work With Me &#x2192;</a>
@@ -314,11 +303,25 @@
         </div>
 
         <div class="hero-visual reveal">
-          <div class="selfie-frame">
-            <span class="selfie-tape" aria-hidden="true"></span>
-            <img src="assets/lucifer-selfie.png" alt="Steving and Lucifer — with built-in speech bubble">
+          <span class="note n1">3 deadlines??</span>
+          <span class="note n2">random idea 💡</span>
+          <span class="note n3">follow up later?</span>
+          <svg class="sweep" viewBox="0 0 120 60" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round">
+            <path d="M6,12 C40,2 78,14 96,40"/><path d="M96,40 l-12,-3 M96,40 l-2,-12"/>
+          </svg>
+          <div class="brief sticker">
+            <div class="brief-top">
+              <span class="nm"><svg viewBox="0 0 44 36" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><line x1="8" y1="11" x2="22" y2="6"/><line x1="22" y1="6" x2="36" y2="14"/><line x1="8" y1="11" x2="17" y2="27"/><line x1="17" y1="27" x2="33" y2="28"/><line x1="22" y1="6" x2="17" y2="27"/><circle cx="8" cy="11" r="3.4" fill="currentColor"/><circle cx="22" cy="6" r="3.4" fill="currentColor"/><circle cx="36" cy="14" r="3.4" fill="currentColor"/><circle cx="17" cy="27" r="3.4" fill="currentColor"/><circle cx="33" cy="28" r="3.4" fill="currentColor"/></svg></span>
+              Your day — already handled
+              <span class="brief-date">Mon</span>
+            </div>
+            <ul class="brief-list">
+              <li class="done">Video edits shipped — V3 of the launch reel</li>
+              <li class="done">Campaign drafted &amp; queued for review</li>
+              <li class="focus">Your ONE focus today: the 2pm strategy call</li>
+              <li class="killed">Flagged the thing you almost missed</li>
+            </ul>
           </div>
-          <p class="hero-warning"><strong>⚡ Hot Disclaimer:</strong> I might outsource some of your jobs to Lucifer. If that bothers you, you'll just miss out on hiring me.</p>
         </div>
       </div>
     </div>
@@ -347,9 +350,12 @@
       </div>
       <div class="reframe-grid">
         <div class="reframe-left reveal">
-          <p>Every VA you've ever hired covered <em>one</em> slice. They edited videos, or wrote copy, or ran email campaigns — never all of it. So you kept wearing every hat that crossed domains, which is most of them. The work that needed <b>breadth</b> never got delegated.</p>
-          <p>I built a stack, not a niche. <b>Video editing, copywriting, campaign building, research, ops, light strategy</b> — under one roof. Then I got fluent in AI so I move at the speed of thought, not the speed of a brief. Then I learned to hold a client's full world like a second brain — so the work happens without supervision.</p>
-          <p><b>One person doing the work of three. Without the cost of three.</b></p>
+          <p>Do you remember Donna Paulsen from Suits?</p>
+          <p>She doesn't wait for briefs. She doesn't need to be told what's important. She walks in with the deal half-closed and the contract already drafted.</p>
+          <p>That's the role I run for founders, agency owners, and coaches. <b>Different person. Same essence.</b> Someone who handles the work AND the thinking, knows what matters before you ask, and shows up like the business depends on him. <em>(It does.)</em></p>
+          <p><b>Now imagine having me as your Donna.</b></p>
+          <p>I run your ads. Edit your videos. Build your funnels. Write your emails. Use AI like a small agency stuffed into one person.</p>
+          <p><b>That's me.</b></p>
         </div>
         <div class="nots reveal">
           <div class="not sticker"><span class="x">✕</span> Most VAs cover one skill — design, or writing, or scheduling. Never the breadth.</div>

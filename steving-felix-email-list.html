@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Steving Felix — Notes From the VA You Don't Have to Manage</title>
+  <meta name="description" content="A multi-talented VA who uses AI and treats your business like it's his own — notes for busy founders, agency owners and coaches.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Caveat:wght@600;700&family=Nunito:ital,wght@0,400;0,600;0,700;0,800;0,900;1,700&display=swap" rel="stylesheet">
+  <style>
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+
+    :root{
+      --oat:#F5ECDA;
+      --oat-2:#ECDFC2;
+      --paper:#FFFCF4;
+      --ink:#2A2418;
+      --ink-soft:#6E6350;
+      --pine:#2F5A47;
+      --pine-deep:#224335;
+      --gold:#D9A441;
+      --gold-deep:#BC8A2C;
+      --champagne:#EBDAB0;
+      --clay:#E4C29A;
+      --rose:#CC7E72;
+      --dark:#21281E;
+      --shadow:4px 5px 0 rgba(42,36,24,.9);
+      --shadow-sm:3px 3px 0 rgba(42,36,24,.9);
+      --radius:20px;
+    }
+
+    html{scroll-behavior:smooth}
+    body{
+      background-color:var(--oat);
+      background-image:radial-gradient(rgba(42,36,24,.05) 1.1px, transparent 1.1px);
+      background-size:24px 24px;
+      color:var(--ink);
+      font-family:'Nunito',sans-serif;font-size:16px;line-height:1.6;font-weight:600;
+      overflow-x:hidden;
+    }
+
+    .wrap{max-width:1180px;margin:0 auto;padding:0 28px}
+    .display{font-family:'Bricolage Grotesque',sans-serif;font-weight:800;line-height:1.03;letter-spacing:-.018em}
+    .script{font-family:'Caveat',cursive;color:var(--pine-deep);font-weight:700}
+    .underline-wave{
+      background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 12'%3E%3Cpath d='M2,8 q15,-9 30,0 t30,0 t30,0 t26,0' fill='none' stroke='%23D9A441' stroke-width='4' stroke-linecap='round'/%3E%3C/svg%3E");
+      background-repeat:no-repeat;background-position:left bottom;background-size:100% .4em;padding-bottom:.08em;
+    }
+    .doodle{font-style:normal;display:inline-block}
+
+    .pill{display:inline-flex;align-items:center;gap:7px;font-family:'Nunito';font-weight:800;font-size:13px;background:var(--paper);border:2px solid var(--ink);border-radius:999px;padding:6px 15px;box-shadow:var(--shadow-sm)}
+    .btn{display:inline-flex;align-items:center;gap:8px;font-family:'Nunito';font-weight:800;font-size:15px;border:2px solid var(--ink);border-radius:12px;padding:13px 24px;text-decoration:none;color:var(--ink);background:var(--paper);box-shadow:var(--shadow);cursor:pointer;transition:transform .12s ease,box-shadow .12s ease}
+    .btn:hover{transform:translate(-1px,-2px);box-shadow:6px 8px 0 rgba(42,36,24,.9)}
+    .btn:active{transform:translate(2px,2px);box-shadow:1px 1px 0 rgba(42,36,24,.9)}
+    .btn-gold{background:var(--gold);color:var(--ink)}
+
+    /* ---------- hero ---------- */
+    .hero{padding:60px 0 80px;position:relative;overflow:hidden;min-height:100vh;display:flex;align-items:center}
+    .hero-grid{display:grid;grid-template-columns:1.02fr .98fr;gap:60px;align-items:center;position:relative;width:100%}
+    .hero h1{font-size:clamp(30px,4.4vw,54px);margin:18px 0 8px;line-height:1.12}
+    .hero-wink{font-family:'Caveat',cursive;font-weight:700;font-size:clamp(20px,2.4vw,26px);color:var(--ink-soft);margin:14px 0 22px}
+    .hero-desc{font-size:17px;color:var(--ink-soft);max-width:540px;margin:0 0 22px}
+    .hero-desc b{color:var(--ink);font-weight:800}
+
+    /* email signup form */
+    .signup-form{display:flex;gap:10px;flex-wrap:wrap;max-width:520px;margin:0 0 14px}
+    .signup-input{flex:1;min-width:220px;padding:13px 18px;border:2px solid var(--ink);border-radius:12px;font-family:'Nunito';font-weight:700;font-size:15px;background:var(--paper);color:var(--ink);box-shadow:var(--shadow-sm);outline:none;transition:transform .12s ease,box-shadow .12s ease}
+    .signup-input:focus{transform:translate(-1px,-1px);box-shadow:5px 6px 0 rgba(42,36,24,.9)}
+    .signup-input::placeholder{color:var(--ink-soft);opacity:.7}
+    .signup-fine{font-size:12.5px;color:var(--ink-soft);font-weight:700;margin:0}
+
+    /* selfie + hot disclaimer */
+    .hero-visual{position:relative;padding:14px 6px;display:flex;flex-direction:column;align-items:center;gap:18px}
+    .selfie-frame{position:relative;max-width:420px;width:100%;transform:rotate(-2deg)}
+    .selfie-frame img{display:block;width:100%;height:auto;background:var(--oat-2);border:2px solid var(--ink);border-radius:var(--radius);box-shadow:var(--shadow)}
+    .selfie-tape{position:absolute;top:-12px;left:50%;transform:translateX(-50%) rotate(-1deg);width:90px;height:22px;background:rgba(245,236,218,.72);border:1px dashed rgba(42,36,24,.35);z-index:6}
+    .hero-warning{text-align:center;font-size:13.5px;font-style:italic;font-weight:700;color:var(--ink-soft);max-width:420px;margin:0;line-height:1.5}
+    .hero-warning strong{color:var(--gold-deep);font-weight:900;letter-spacing:.06em;text-transform:uppercase;font-style:normal;margin-right:2px}
+
+    .reveal{opacity:0;transform:translateY(24px);transition:opacity .6s ease,transform .6s ease}
+    .reveal.in{opacity:1;transform:none}
+
+    @media(max-width:900px){
+      .hero-grid{grid-template-columns:1fr;gap:40px}
+    }
+    @media(max-width:560px){
+      .selfie-frame{max-width:320px;transform:rotate(-1deg)}
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HERO (email list landing page) -->
+  <header class="hero">
+    <div class="wrap">
+      <div class="hero-grid">
+        <div>
+          <span class="pill"><span class="doodle">📣</span> Calling on busy founders, agency owners &amp; coaches…</span>
+          <h1 class="display">Hi. My name's "the VA who handles your business like he owns it," and I've been called "Steving Felix."</h1>
+          <p class="hero-wink">Actually wait, I think I got that backwards 🤔</p>
+          <p class="hero-desc">
+            But yeah, I'm that <b>multi-talented VA you don't have to manage</b> … who'll <b>edit your videos</b> … <b>write your campaigns</b> … <b>build your funnels</b> … <b>run your ads</b> … <b>clean up your CRM</b> … <b>use AI like a small agency stuffed into one person</b> … and still <b>treat your business like it's mine too</b>.
+          </p>
+          <p class="hero-desc" style="margin-bottom:22px"><b>Drop your email below.</b> I send notes a few times a week — what I'm building, what's working, what I'm seeing founders get wrong. No fluff, no funnels, just the real stuff.</p>
+          <form action="#" method="post" class="signup-form">
+            <input type="email" name="email" placeholder="you@email.com" required class="signup-input">
+            <button type="submit" class="btn btn-gold">Get My Emails &#x2192;</button>
+          </form>
+          <p class="signup-fine">Free. No spam. Unsubscribe anytime.</p>
+        </div>
+
+        <div class="hero-visual reveal">
+          <div class="selfie-frame">
+            <span class="selfie-tape" aria-hidden="true"></span>
+            <img src="assets/lucifer-selfie.png" alt="Steving and Lucifer — with built-in speech bubble">
+          </div>
+          <p class="hero-warning"><strong>⚡ Hot Disclaimer:</strong> I might outsource some of your jobs to Lucifer. If that bothers you, you'll just miss out on hiring me.</p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <script>
+    const io=new IntersectionObserver((es)=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:.12});
+    document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+  </script>
+
+</body>
+</html>
